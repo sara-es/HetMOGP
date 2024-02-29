@@ -6,8 +6,8 @@ import numpy as np
 from GPy.likelihoods import link_functions
 from GPy.likelihoods import Likelihood
 from GPy.util.misc import safe_exp, safe_square
-from GPy.util.univariate_Gaussian import std_norm_pdf, std_norm_cdf
-from scipy.misc import logsumexp
+# from GPy.util.univariate_Gaussian import std_norm_pdf, std_norm_cdf
+from scipy.special import logsumexp
 
 
 class Bernoulli(Likelihood):
